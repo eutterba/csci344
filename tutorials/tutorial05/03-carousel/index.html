@@ -13,7 +13,9 @@
     <main>
         <h1>Carousel Exercise</h1>
         <div id="container">
-            <button onclick="moveCarousel('backward')">Back</button>
+            <button onclick="moveCarousel('backward')">
+                <img class="arrows" src="images/left.jpg" alt="image of a left arrow">
+            </button>
             <div id="carousel-track">
                 <!-- 
                  Hidden window to to hold all of the items. 
@@ -24,13 +26,15 @@
                     <img src="images/img2.jpg" class="carousel-item" />
                     <img src="images/img3.jpg" class="carousel-item" />
                     <img src="images/img4.jpg" class="carousel-item" />
-                    <div class="carousel-item">A</div>
-                    <div class="carousel-item">B</div>
-                    <div class="carousel-item">C</div>
-                    <div class="carousel-item">D</div>
+                    <img src="images/img5.jpg" class="carousel-item" />
+                    <img src="images/img6.jpg" class="carousel-item" />
+                    <img src="images/img7.jpg" class="carousel-item" />
+                    <img src="images/img8.jpg" class="carousel-item" />
                 </div>
             </div>
-            <button onclick="moveCarousel('forward')">Forward</button>
+            <button onclick="moveCarousel('forward')">
+                <img class="arrows" src="images/right.jpg" alt="image of a left arrow">
+            </button>
         </div>
         <p>Credit: Adapted from <a href="https://www.youtube.com/watch?v=Zd8170gwwmc"
                 target="_blank">https://www.youtube.com/watch?v=Zd8170gwwmc</a></p>

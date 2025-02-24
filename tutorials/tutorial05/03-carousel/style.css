@@ -52,3 +52,9 @@ main {
     font-size: 16px;
     transition: transform 0.3s ease;
 }
+
+.arrows{
+
+max-width: 50px;
+
+}
