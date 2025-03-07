@@ -22,9 +22,9 @@ function drawMonster(x, y, size, color, isSurprised) {
   fill(color);
   rect(x, y, size, size);
   const whiteSize = size * 0.3;
-  const eyeheight = size / 4 - y;
+  const eyeheight = Math.abs(size / 4 - y);
   const lefteye = x + size / 3;
-  const righteye = size / 3 - x;
+  const righteye = Math.abs(size / 3 - x);
   const pupilheight = eyeheight - whiteSize / 4;
   const pupilSize = whiteSize * 0.33;
   const mouthPosition = y + size / 6;
@@ -33,8 +33,10 @@ function drawMonster(x, y, size, color, isSurprised) {
   const mouthWidth = mouthHeight * 3;
   //left eye
   fill("white");
+  //console.log(lefteye, eyeheight, whiteSize, whiteSize);
   rect(lefteye, eyeheight, whiteSize, whiteSize);
   //right eye
+  console.log(righteye, eyeheight, whiteSize, whiteSize);
   rect(righteye, eyeheight, whiteSize, whiteSize);
   //left pupil
   fill("black");
