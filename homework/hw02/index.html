@@ -6,51 +6,523 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>HW02 Starter Code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Photo App</title>
+
 </head>
 
 <body>
 
     <header class = "top-nav">
         <!-- Navigation (Fixed)-->
-        (header tag)
         <h1 class="logo">
-            Logo / title goes here.
+            Photo App
         </h1>
-        <nav>
-            Navigation goes here.
-        </nav>
+        <div class="nav-elem">
+            <p>
+                gibsonjack
+            </p>
+            <nav>
+                <a class="sign-out" href="">
+                    Sign Out
+                </a>
+            </nav>
+        </div>
     </header>
 
     <!-- Right Panel (Fixed) -->
-    <aside>
-        (aside tag)
-        <header>Username stuff</header>
-        <section>Suggestions for you</section>
+    <aside class="suggestions-panel">
+        <header class="current-user">
+            <img class="profile-pic" src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2022/09/4D1227F6-C40E-4E14-9C3D-AD1E88DF60E6.jpeg" 
+            alt="sleepy red panda">
+            <h1>
+                gibsonjack
+            </h1>
+        </header>
+        <section>
+            <h3>
+                Suggestions for you
+            </h3>
+            <div class="suggestion-container">
+                <img class="suggested-profile" src="https://i.etsystatic.com/8800676/r/il/ddd626/3226445398/il_1080xN.3226445398_kul9.jpg" 
+                alt="a picture of a gold 20 sided dice">
+                <div class="suggested-user">
+
+                    <h4 class="username">
+                        naturalTwenty
+                    </h4>
+                    <h5 class="suggested">
+                        suggested for you
+                    </h5>
+    
+                </div>
+
+                <a class="follow" href="">
+                    follow
+                </a>
+
+            </div>
+
+            <div class="suggestion-container">
+                <img class="suggested-profile" src="https://cdn11.bigcommerce.com/s-70184/images/stencil/2560w/products/571/7432/d12-black-red-dice-chessex__15903.1654025463.jpg?c=2" 
+                alt="a picture of a black 12 sided dice">
+                <div class="suggested-user">
+
+                    <h4 class="username">
+                        diceGoblin
+                    </h4>
+                    <h5 class="suggested">
+                        suggested for you
+                    </h5>
+    
+                </div>
+
+                <a class="follow" href="">
+                    follow
+                </a>
+
+            </div>
+
+            <div class="suggestion-container">
+                <img class="suggested-profile" src="https://www.thediceshoponline.com/media/catalog/product/cache/f29f0998c4cc5290cdd61c5e4e3f186e/i/m/img_7845b.jpg" 
+                alt="a picture of a white percentile dice with blood splatters">
+                <div class="suggested-user">
+
+                    <h4 class="username">
+                        SorcerorsBeWild
+                    </h4>
+                    <h5 class="suggested">
+                        suggested for you
+                    </h5>
+    
+                </div>
+
+                <a class="follow" href="">
+                    follow
+                </a>
+
+            </div>
+
+            <div class="suggestion-container">
+                <img class="suggested-profile" src="https://cdn11.bigcommerce.com/s-70184/images/stencil/1920w/products/532/7428/d8-dice-blue__64321.1638308632.jpg?c=2" 
+                alt="a picture of a blue eight sided dice">
+                <div class="suggested-user">
+
+                    <h4 class="username">
+                        bibbityBoppityBONK
+                    </h4>
+                    <h5 class="suggested">
+                        suggested for you
+                    </h5>
+    
+                </div>
+
+                <a class="follow" href="">
+                    follow
+                </a>
+
+            </div>
+
+            <div class="suggestion-container">
+                <img class="suggested-profile" src="https://m.media-amazon.com/images/I/51vEDVGbtrL._SL500_.jpg" 
+                alt="a picture of a pile of six sided dice of various colors">
+                <div class="suggested-user">
+
+                    <h4 class="username">
+                        criticalRouge
+                    </h4>
+                    <h5 class="suggested">
+                        suggested for you
+                    </h5>
+    
+                </div>
+
+                <a class="follow" href="">
+                    follow
+                </a>
+
+            </div>
+
+        </section>
     </aside>
 
-    <main> (main tag)
+    <main> 
 
-        
         <section class="news-feed">
-            (section tag)
+            
             <!-- Stories -->
-            <header>
-                Stories Panel
+            <header class="stories">
+                <div class="story-card">
+                    <img class="story-profile" src="https://i.etsystatic.com/8800676/r/il/ddd626/3226445398/il_1080xN.3226445398_kul9.jpg" 
+                    alt="a picture of a gold 20 sided dice">
+                    <h5 class="story-user">
+                        naturalTwenty
+                    </h5>
+                </div>
+                <div class="story-card">
+                    <img class="story-profile" src="https://cdn11.bigcommerce.com/s-70184/images/stencil/2560w/products/571/7432/d12-black-red-dice-chessex__15903.1654025463.jpg?c=2" 
+                    alt="a picture of a black 12 sided dice">
+                    <h5 class="story-user">
+                        diceGoblin
+                    </h5>
+                </div>
+                <div class="story-card">
+                    <img class="story-profile" src="https://www.thediceshoponline.com/media/catalog/product/cache/f29f0998c4cc5290cdd61c5e4e3f186e/i/m/img_7845b.jpg" 
+                    alt="a picture of a white percentile dice with blood splatters">
+                    <h5 class="story-user">
+                        SorcerorsBeWild
+                    </h5>
+                </div>
+                <div class="story-card">
+                    <img class="story-profile" src="https://cdn11.bigcommerce.com/s-70184/images/stencil/1920w/products/532/7428/d8-dice-blue__64321.1638308632.jpg?c=2" 
+                    alt="a picture of a blue eight sided dice">
+                    <h5 class="story-user">
+                        bibbityBoppityBONK
+                    </h5>
+                </div>
+                <div class="story-card">
+                    <img class="story-profile" src="https://m.media-amazon.com/images/I/51vEDVGbtrL._SL500_.jpg" 
+                    alt="a picture of a pile of six sided dice of various colors">
+                    <h5 class="story-user">
+                        criticalRouge
+                    </h5>
+                </div>
             </header>
 
             <!-- Posts  -->
             <section class="post">
-                Post 1
+                <div class="post-top">
+                    <h2 class="creator-user">
+                        gibsonjack
+                    </h2>
+                    <i class="fa-solid fa-ellipsis">
+                    </i>
+                </div>
+                <img class="post-pic" src="https://media.discordapp.net/attachments/684491616211435551/1205548596636811334/1706685429803.jpg?ex=67d3059f&is=67d1b41f&hm=4cea607675d56449ff60bf16501eb58041a82c765b78ae42d9ef1e28281366b6&=&format=webp&width=396&height=399" 
+                alt="thought youd appreciate this ">
+                <div class="comment-section">
+                    <div class="post-icons">
+                        <div class="like-comment-send">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark">
+                        </i>
+                    </div>
+
+                </div>
+                <div class="stats">
+                    <p class="like-count">
+                        30 likes
+                    </p>
+                </div>
+                <div class="caption-container">
+                    <div class="caption-card">
+                        <h4 class="caption-user">
+                            gibsonjack
+                        </h4>
+                            <p class="caption">
+                                Here is a caption about the photo. 
+                                blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                            </p>
+                        <a class="more" href="">
+                            more
+                        </a>
+                    </div>
+
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            naturalTwenty
+                        </h4>
+                        <p class="comment-text">
+                            Here is a comment blah blah blah blah blah blah blah
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            bibbityBoppityBONK
+                        </h4>
+                        <p class="comment-text">
+                            Here is another comment blah blah blah blah blah blah blah
+                        </p>
+                    </div>
+                    <p class="comment-time">
+                        1 DAY AGO
+                    </p>
+
+                </div>
+
+                <div class="comment-creation">
+                    <div class="add-ons">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <label for="compsci-meme-comment"> Add a comment... </label>
+                        <input id="compsci-meme-comment" class="add-comment" type="text" value="Add a comment...">
+
+                    </div>
+                    <a class="add-post" href="">
+                        Post
+                    </a>
+                </div>
+
             </section>
             <section class="post">
-                Post 2
+                <div class="post-top">
+                    <h2 class="creator-user">
+                        diceGoblin
+                    </h2>
+                    <i class="fa-solid fa-ellipsis">
+                    </i>
+                </div>
+                <img class="post-pic" src="https://media.discordapp.net/attachments/684491616211435551/1214759210215145542/Screenshot_20240305-211901.png?ex=67d2e96c&is=67d197ec&hm=1f580c203f6e496e49bc0074b313ebbd6ca72028fc01d2a8237ad446caf184e4&=&format=webp&quality=lossless&width=396&height=392" 
+                alt="conversation about a alligator with a knife in its head ">
+                <div class="comment-section">
+                    <div class="post-icons">
+                        <div class="like-comment-send">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark">
+                        </i>
+                    </div>
+
+                </div>
+                <div class="stats">
+                    <p class="like-count">
+                        1k likes
+                    </p>
+                </div>
+                <div class="caption-container">
+                    <div class="caption-card">
+                        <h4 class="caption-user">
+                            diceGoblin
+                        </h4>
+                            <p class="caption">
+                                I WILL get the forbidden shiny
+                            </p>
+                        <a class="more" href="">
+                            more
+                        </a>
+                    </div>
+
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            bibbityBoppityBONK
+                        </h4>
+                        <p class="comment-text">
+                            Dice Goblin NO!
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            criticalRouge
+                        </h4>
+                        <p class="comment-text">
+                            I'll give you a gold piece if you ride it 
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            SorcerorsBeWild
+                        </h4>
+                        <p class="comment-text">
+                            @naturalTwenty we need you to come back early.
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            naturalTwenty
+                        </h4>
+                        <p class="comment-text">
+                            I left for THIRTY MINUTES!
+                        </p>
+                    </div>
+                    <p class="comment-time">
+                        1 HOUR AGO
+                    </p>
+
+                </div>
+
+                <div class="comment-creation">
+                    <div class="add-ons">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <label for="gator-knife-meme-comment"> Add a comment... </label>
+                        <input id="gator-knife-meme-comment" class="add-comment" type="text" value="Add a comment...">
+
+                    </div>
+                    <a class="add-post" href="">
+                        Post
+                    </a>
+                </div>
+
             </section>
             <section class="post">
-                Post 3
+                <div class="post-top">
+                    <h2 class="creator-user">
+                        SorcerorsBeWild
+                    </h2>
+                    <i class="fa-solid fa-ellipsis">
+                    </i>
+                </div>
+                <img class="post-pic" src="https://media.discordapp.net/attachments/684491616211435551/1244041965209784460/GN_WN6CWMAAwkFg.png?ex=67d3505d&is=67d1fedd&hm=9ee1e2d6b2f5f258c371c48f8366e3de881f9681f1f2c5774aef91a0aa30739a&=&format=webp&quality=lossless&width=366&height=428" 
+                alt="a meme about dwarves ">
+                <div class="comment-section">
+                    <div class="post-icons">
+                        <div class="like-comment-send">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark">
+                        </i>
+                    </div>
+
+                </div>
+                <div class="stats">
+                    <p class="like-count">
+                        3 likes
+                    </p>
+                </div>
+                <div class="caption-container">
+                    <div class="caption-card">
+                        <h4 class="caption-user">
+                            SorcerorsBeWild
+                        </h4>
+                            <p class="caption">
+                                @bibbityBoppityBONK which one did you pick?
+                            </p>
+                        <a class="more" href="">
+                            more
+                        </a>
+                    </div>
+
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            bibbityBoppityBONK
+                        </h4>
+                        <p class="comment-text">
+                            shut your trap you filthy knife-ear
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            SorcerorsBeWild
+                        </h4>
+                        <p class="comment-text">
+                            option 4 it is!
+                        </p>
+                    </div>
+                    <p class="comment-time">
+                        7 DAYS AGO
+                    </p>
+
+                </div>
+
+                <div class="comment-creation">
+                    <div class="add-ons">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <label for="dwarf-meme-comment"> Add a comment... </label>
+                        <input id="dwarf-meme-comment" class="add-comment" type="text" value="Add a comment...">
+
+                    </div>
+                    <a class="add-post" href="">
+                        Post
+                    </a>
+                </div>
+
             </section>
             <section class="post">
-                Post 4
+                <div class="post-top">
+                    <h2 class="creator-user">
+                        naturalTwenty
+                    </h2>
+                    <i class="fa-solid fa-ellipsis">
+                    </i>
+                </div>
+                <img class="post-pic" src="https://media.discordapp.net/attachments/684491616211435551/1211802301233242112/a2ed1a4953104eeb9c0876991000cabb.png?ex=67d35c56&is=67d20ad6&hm=9a7ff18f013aa372835428dda4404dcba887174ebde872aea2240cf1755c4559&=&format=webp&quality=lossless&width=396&height=396" 
+                alt="a hand going through a drawer of just violence folders ">
+                <div class="comment-section">
+                    <div class="post-icons">
+                        <div class="like-comment-send">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <i class="fa-regular fa-bookmark">
+                        </i>
+                    </div>
+
+                </div>
+                <div class="stats">
+                    <p class="like-count">
+                        3k likes
+                    </p>
+                </div>
+                <div class="caption-container">
+                    <div class="caption-card">
+                        <h4 class="caption-user">
+                            naturalTwenty
+                        </h4>
+                            <p class="caption">
+                                when you ask your party members to pick something up from the merchent for you
+                                AND THEY SEND THE ROUGE AND BARBARIAN
+                            </p>
+                        <a class="more" href="">
+                            more
+                        </a>
+                    </div>
+
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            bibbityBoppityBONK
+                        </h4>
+                        <p class="comment-text">
+                            Rouge tell me to bonk, I bonk. 
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            criticalRouge
+                        </h4>
+                        <p class="comment-text">
+                            hey we got your herbalism kit
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h4 class="comment-user">
+                            naturalTwenty
+                        </h4>
+                        <p class="comment-text">
+                            THAT IS NOT THE PROBLEM!
+                        </p>
+                    </div>
+                    <p class="comment-time">
+                        2 WEEKS AGO
+                    </p>
+
+                </div>
+
+                <div class="comment-creation">
+                    <div class="add-ons">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <label for="violence-meme-comment"> Add a comment... </label>
+                        <input id="violence-meme-comment" class="add-comment" type="text" value="Add a comment...">
+
+                    </div>
+                    <a class="add-post" href="">
+                        Post
+                    </a>
+                </div>
+
             </section>
         </section>
     </main>
