@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
- import Profile from "./Profile.jsx";
- import ButtonCount from "./ButtonCount.jsx";
- import { getPosts } from "./data-functions.js";
+import Profile from "./Profile.jsx";
+import ButtonCount from "./ButtonCount.jsx";
+import { getPosts } from "./data-functions.js";
+import { Welcome } from "./Welcome.jsx";
 
  export default function App() {
      const [posts, setPosts] = useState([]);
@@ -33,6 +34,7 @@ import React, { useState, useEffect } from "react";
              </header>
              <main>
                  <p>Hello React!</p>
+                 <Welcome name={"Eli"} imgUrl={"https://tse2.mm.bing.net/th?id=OIP.EhqVlDb1718OqDfsp0cGkQHaEK&pid=Api"}/>
                  {/* expressions are embedded in curly braces in JSX */}
                  {getProfileComponents()}
 

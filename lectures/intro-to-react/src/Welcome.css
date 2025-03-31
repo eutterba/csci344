@@ -1,0 +1,21 @@
+.card{
+    display: flex;
+    color: antiquewhite;
+    background-color: darkcyan;
+    flex-direction: column;
+    max-width: 20%;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.active-card{
+    display: flex;
+    color: darkcyan;
+    background-color: antiquewhite;
+    flex-direction: column;
+    max-width: 20%;
+    align-items: center;
+}

@@ -1,15 +1,12 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
+import App from "./components/App.jsx";
 
 function main() {
+    // this script kicks off the React App:
     const rootEl = document.getElementById("app");
     const root = createRoot(rootEl);
-    root.render(
-        <div>
-            <App />
-        </div>
-    );
+    root.render(<App />);
 }
 
 main();
